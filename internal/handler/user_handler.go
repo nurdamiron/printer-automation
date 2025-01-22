@@ -14,7 +14,7 @@ type UserHandler struct {
 func NewUserHandler(u service.UserService) *UserHandler {
     return &UserHandler{userService: u}
 }
-
+//
 func (h *UserHandler) CreateUser(c *gin.Context) {
     type reqBody struct {
         Username string `json:"username" binding:"required"`
